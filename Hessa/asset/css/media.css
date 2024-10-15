@@ -1,0 +1,54 @@
+@media(max-width:1200px) {
+    nav .hessa-btn-blue {
+        display: none;
+    }
+}
+
+@media(max-width:991px) {
+    nav .form-inline {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .home-boxes {
+        width: 100%;
+    }
+    .home-header .img-head {
+        margin-top: -50px;
+    }
+    .home-boxes .box .title {
+        text-align: center;
+    }
+    .home-boxes .box p {
+        margin-bottom: 10px;
+        color: black;
+        font-size: 20px;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width:767px) {
+    .home-header h2,
+    .invest h3,
+    .home-chart h3 {
+        font-size: 30px;
+    }
+    .home-header .img-head {
+        margin-top: 0;
+    }
+    .home-chart .hessa-btn-blue {
+        margin-top: 20px;
+        display: block;
+    }
+    footer {
+        text-align: center;
+    }
+    footer ul {
+        text-align: center;
+    }
+    footer ul li {
+        padding-bottom: 15px;
+    }
+}

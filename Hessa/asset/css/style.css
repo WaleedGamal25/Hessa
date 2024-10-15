@@ -1,0 +1,389 @@
+body,
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f7faff;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.container {
+    max-width: 1700px;
+}
+
+nav {
+    width: 100%;
+    z-index: 9;
+    top: 0;
+    background: #DCF6EB;
+}
+
+nav .nav-link img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+nav .nav-link {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+nav .btn-primary {
+    border-radius: 50px;
+}
+
+nav .form-inline {
+    position: relative;
+}
+
+nav .form-inline i {
+    color: black;
+}
+
+nav .form-inline input {
+    border-radius: 30px;
+}
+
+nav .form-inline button {
+    position: absolute;
+    right: 3px;
+    z-index: 1;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.home-header {
+    background: url(../images/bg.png) no-repeat center top;
+    background-size: contain;
+    text-align: center;
+    padding: 90px 0 0;
+}
+
+.home-header h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.home-header p {
+    font-size: 18px;
+}
+
+.hessa-btn {
+    background: #42CE8F;
+    color: white !important;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-size: 15px;
+    text-decoration: none !important;
+}
+
+.hessa-btn-blue {
+    background: #58ACEC;
+    color: white !important;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-size: 15px;
+    text-decoration: none !important;
+}
+
+.home-header .img-head {
+    margin-top: -8vw;
+    z-index: -1;
+    position: relative;
+}
+
+.invest {
+    padding: 0 0 30px;
+    background: rgb(187, 221, 248);
+    background: radial-gradient(circle, rgba(187, 221, 248, 1) 5%, rgba(247, 250, 255, 1) 35%);
+}
+
+.invest h3 {
+    padding-top: 0px;
+    padding-bottom: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.invest p {
+    font-size: 18px;
+    max-width: 300px;
+    margin: auto;
+    min-height: 100px;
+}
+
+.invest .content {
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 1px #EEE;
+    margin-bottom: 20px;
+}
+
+.invest .content .bg {
+    border-radius: 30px;
+    background: linear-gradient(180deg, #E2F7EE 0%, rgba(226, 247, 238, 0) 100%);
+    padding: 40px 40px 20px;
+    border-radius: 60px !important;
+    box-shadow: 0 0 0px 30px #FFF inset;
+}
+
+.invest .content img {
+    display: block;
+    margin: 10px auto;
+    width: auto;
+}
+
+.home-chart {
+    padding: 40px 0;
+}
+
+.home-chart h3 {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.home-chart p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+    min-height: 100px;
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.panel.top-section {
+    height: 100vh;
+}
+
+.panel.pos-ab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.panel-pin {
+    width: 1400 !important;
+    max-width: 1400px !important;
+    height: 100vh;
+    margin: 40px auto 20px;
+}
+
+.panel .home-boxes .box img {
+    width: auto !important;
+}
+
+.panel .home-boxes .box .title {
+    color: black !important;
+    background-color: #000;
+    background-image: linear-gradient(65deg, #000, #000);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    font-weight: 600;
+    max-width: 538px;
+    line-height: 1.3;
+}
+
+.mob-block {
+    display: none;
+}
+
+.mob-block .icon {
+    width: auto !important;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.mob-block .box {
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 991px) {
+    .about-boxes .main-title {
+        font-size: 50px;
+    }
+    .about-boxes h2 {
+        font-size: 30px;
+    }
+    .mob-block {
+        display: block;
+    }
+    .panel-pin {
+        display: none;
+    }
+    .panel.pos-ab {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-boxes .main-title {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .about-boxes h2 {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .about-boxes p {
+        text-align: center;
+    }
+}
+
+
+/* home-boxes */
+
+.home-boxes {
+    padding: 10px 0 30px;
+    width: 95%;
+}
+
+.home-boxes .box {
+    background: white;
+    box-shadow: 0 0 3px 0 #DDD;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.home-boxes .box.text-center {
+    padding: 50px 30px 0;
+}
+
+.home-boxes .box img {
+    display: block;
+    width: 100%;
+}
+
+.home-boxes .box .sub-title {
+    color: #6C0D88;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.home-boxes .box .title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.home-boxes .box p {
+    margin-bottom: 20px;
+    color: black;
+    font-size: 27px;
+    max-width: 370px;
+}
+
+.home-boxes .box .btn {
+    margin-bottom: 20px;
+}
+
+
+/* home-boxes */
+
+
+/* motion */
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 15% 0%;
+    }
+    50% {
+        background-position: 85% 100%;
+    }
+    100% {
+        background-position: 15% 0%;
+    }
+}
+
+@keyframes frame-enter {
+    0% {
+        clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    25% {
+        clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    50% {
+        clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, 100% 0%, 0% 0%);
+    }
+    75% {
+        -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 0%, 0% 0%);
+    }
+    100% {
+        -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
+    }
+}
+
+.pin-spacer .panel:first-of-type .box {
+    background: rgb(151, 228, 193);
+    background: linear-gradient(90deg, rgba(151, 228, 193, 1) 8%, rgba(226, 247, 238, 1) 85%);
+    box-shadow: none !important;
+}
+
+.pin-spacer .panel:nth-of-type(2) .box {
+    background: rgb(171, 212, 247);
+    background: linear-gradient(90deg, rgba(171, 212, 247, 1) 8%, rgba(226, 247, 238, 1) 85%);
+    box-shadow: none !important;
+}
+
+.pin-spacer .panel:nth-of-type(3) .box {
+    background: rgb(151, 228, 193);
+    background: linear-gradient(90deg, rgba(151, 228, 193, 1) 8%, rgba(226, 247, 238, 1) 85%);
+    box-shadow: none !important;
+}
+
+.pin-spacer .panel:last-of-type .box {
+    background: rgb(171, 212, 247);
+    background: linear-gradient(90deg, rgba(171, 212, 247, 1) 8%, rgba(226, 247, 238, 1) 85%);
+    box-shadow: none !important;
+}
+
+footer {
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+footer ul {
+    text-align: right;
+}
+
+footer li {
+    margin: 0 5px;
+}
+
+footer p,
+footer a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
