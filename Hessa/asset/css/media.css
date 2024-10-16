@@ -51,4 +51,28 @@
     footer ul li {
         padding-bottom: 15px;
     }
+    .login .left-content {
+        text-align: center;
+    }
+    .login .left-content h3 {
+        margin-top: 20px;
+    }
+    .login .left-content p {
+        text-align: center;
+        margin: 20px auto;
+    }
+    .login .left-content ul {
+        margin-bottom: 30px;
+    }
+    .verfication input {
+        line-height: 50px;
+        font-size: 30px;
+        width: 50px;
+    }
+    .login .login-form {
+        padding: 40px 20px;
+    }
+    .register {
+        padding-top: 60px;
+    }
 }

@@ -64,3 +64,55 @@ if (mediaQuery.matches) {
     handleMediaQueryChange(mediaQuery);
 }
 });
+
+
+
+
+
+
+
+$(function() {
+  'use strict';
+
+  var body = $('body');
+
+  function goToNextInput(e) {
+    var key = e.which,
+      t = $(e.target),
+      sib = t.next('.verfication input');
+
+    if (key != 9 && (key < 48 || key > 57)) {
+      e.preventDefault();
+      return false;
+    }
+
+    if (key === 9) {
+      return true;
+    }
+
+    if (!sib || !sib.length) {
+      sib = body.find('.verfication input').eq(0);
+    }
+    sib.select().focus();
+  }
+
+  function onKeyDown(e) {
+    var key = e.which;
+
+    if (key === 9 || (key >= 48 && key <= 57)) {
+      return true;
+    }
+
+    e.preventDefault();
+    return false;
+  }
+  
+  function onFocus(e) {
+    $(e.target).select();
+  }
+
+  body.on('keyup', '.verfication input', goToNextInput);
+  body.on('keydown', '.verfication input', onKeyDown);
+  body.on('click', '.verfication input', onFocus);
+
+})
