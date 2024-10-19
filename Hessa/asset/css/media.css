@@ -2,6 +2,10 @@
     nav .hessa-btn-blue {
         display: none;
     }
+    .product-gallery table {
+        max-width: auto;
+        width: auto;
+    }
 }
 
 @media(max-width:991px) {
@@ -30,6 +34,20 @@
 }
 
 @media(max-width:767px) {
+    body.home {
+        background: url(../images/bg2.png) no-repeat center center;
+        background-size: cover;
+        padding-top: 100px;
+    }
+    .product-gallery table {
+        font-size: 14px;
+    }
+    .user-info .tabs {
+        margin-top: 30px;
+    }
+    .user-info .tabs ul li a {
+        padding: 7px 15px;
+    }
     .home-header h2,
     .invest h3,
     .home-chart h3 {
