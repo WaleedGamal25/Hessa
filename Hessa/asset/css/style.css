@@ -21,6 +21,10 @@ body.home {
     padding-top: 150px;
 }
 
+body.unit-view {
+    padding-top: 120px;
+}
+
 .main-content {
     min-height: 82vh;
 }
@@ -676,4 +680,132 @@ footer a {
 .fotorama__wrap {
     width: 100% !important;
     margin-bottom: 20px;
+}
+
+.unit-details {
+    margin-bottom: 20px;
+}
+
+.unit-details .flat-option {
+    background: #E2E3DD;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    width: fit-content;
+}
+
+.unit-details ul {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.unit-details .unit-icon {
+    display: block;
+    margin: 0 auto;
+}
+
+.grid-details {
+    padding: 40px 0;
+}
+
+.grid-details .details {
+    padding: 25px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 0 #DDD;
+}
+
+.grid-details table tr,
+.grid-details table th,
+.grid-details table td {
+    border: none;
+}
+
+.grid-details table td {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.grid-details .title {
+    margin-bottom: 20px;
+}
+
+.grid-details .btn {
+    width: 100%;
+    border-radius: 30px;
+    background: #7377851A;
+}
+
+.grid-details .location {
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #EDF6FD;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 0 #DDD;
+}
+
+.grid-details .financials {
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #58ACEC1A;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 0 #DDD;
+}
+
+.grid-details .financials .box {
+    background: #58ACEC1A;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.grid-details .financials .box img {
+    margin-bottom: 5px;
+}
+
+.grid-details .financials .box h2 {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.grid-details .financials .box small {
+    line-height: 1;
+}
+
+.grid-details .chart {
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #58ACEC1A;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 0 #DDD;
+}
+
+.share-side {
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #42CE8F1A;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 0 #DDD;
+}
+
+.share-side .share-numbers {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.share-side small {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.share-side .btn-share {
+    background: #42CE8F;
+    color: white;
+    padding: 12px 20px;
 }

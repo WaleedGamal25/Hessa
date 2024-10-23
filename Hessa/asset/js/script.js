@@ -116,3 +116,4 @@ $(function() {
   body.on('click', '.verfication input', onFocus);
 
 })
+
