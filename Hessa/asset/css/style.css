@@ -9,6 +9,10 @@ body {
     padding-top: 60px;
 }
 
+.text-right {
+    text-align: right;
+}
+
 body.login-page {
     background: rgb(76, 211, 154);
     background: linear-gradient(180deg, rgba(76, 211, 154, 1) 33%, rgba(226, 247, 238, 1) 85%);
@@ -602,6 +606,10 @@ footer a {
     margin-bottom: 15px;
 }
 
+.documents .prize-box {
+    /* padding: 250px 30px; */
+}
+
 .appartment .sidebar img {
     margin-bottom: 10px;
 }
@@ -808,4 +816,37 @@ footer a {
     background: #42CE8F;
     color: white;
     padding: 12px 20px;
+}
+
+.sidebar .btn-light {
+    border-radius: 50px;
+    padding: 7px 40px;
+}
+
+.table-bg {
+    background: #42CE8F1F;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.table-bg p {
+    padding: 0;
+    margin: 0;
+}
+
+.table-bg table {
+    padding: 0;
+    margin: 0;
+}
+
+.documents table {
+    margin-bottom: 2px;
+}
+
+.amenities ul {
+    margin-bottom: 0;
+}
+
+.amenities ul li {
+    font-size: 14px;
 }
