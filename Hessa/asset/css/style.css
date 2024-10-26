@@ -818,7 +818,7 @@ footer a {
     padding: 12px 20px;
 }
 
-.sidebar .btn-light {
+.btn-light {
     border-radius: 50px;
     padding: 7px 40px;
 }
@@ -849,4 +849,99 @@ footer a {
 
 .amenities ul li {
     font-size: 14px;
+}
+
+.appartment.buy {
+    padding: 0 50px
+}
+
+.appartment.buy .container {
+    background: #FFFFFFCC;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 12px 0 #EEE;
+}
+
+.appartment.buy .container .product-gallery {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.appartment.buy .product-gallery table {
+    width: 100%;
+    max-width: 100%;
+}
+
+.appartment.buy .title {
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.appartment.buy .shares .content {
+    background: white;
+    box-shadow: 0 0 7px 0 #DDD;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.appartment.buy .shares .content h5 {
+    color: #737785;
+    font-size: 35px;
+    opacity: 0.5;
+    font-weight: 700;
+}
+
+.appartment.buy .shares .content p {
+    margin-bottom: 0;
+}
+
+.appartment.buy .shares .content small {
+    color: #737785;
+}
+
+.appartment.buy .balance {
+    margin-top: 30px;
+}
+
+.appartment.buy .balance .table-box {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 3px 0 #DDD;
+    padding: 5px;
+}
+
+.appartment.buy .balance .table-box table {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.appartment.buy .balance .table-box table tr,
+.appartment.buy .balance .table-box table td {
+    border: none;
+}
+
+.appartment.buy .balance .table-box table ul {
+    margin-bottom: 0;
+}
+
+.cart-details .hessa-btn {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.cart-details h1 {
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px !important;
+}
+
+.cart-details .btn-light {
+    background: #FFFFFF40 !important;
+    padding: 10px 50px;
+    border: none;
 }

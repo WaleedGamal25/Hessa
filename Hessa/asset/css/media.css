@@ -39,6 +39,9 @@
         background-size: cover;
         padding-top: 100px;
     }
+    .appartment.buy {
+        padding: 0 10px;
+    }
     .product-gallery table {
         font-size: 14px;
     }
