@@ -117,3 +117,61 @@ $(function() {
 
 })
 
+
+
+document.addEventListener("mousemove", (e) => {
+  const moveX = (e.clientX / window.innerWidth - 0.5) * 2;
+  const moveY = (e.clientY / window.innerHeight - 0.5) * 2;
+
+  // Adjust each image position based on mouse movement, keeping them in flow
+  document.querySelector(".img1").style.transform = `translate(${moveX * 30}px, ${moveY * 30}px)`;
+  document.querySelector(".img2").style.transform = `translate(${moveX * 20}px, ${moveY * 20}px)`;
+  document.querySelector(".img3 img").style.transform = `translate(${moveX * 10}px, ${moveY * 10}px)`;
+});
+
+
+
+$(document).ready(function () {
+
+  var lastImageScrollExec = '';
+
+  $(window).on('scroll', function () {
+    var scrollTop = $(window).scrollTop();
+
+
+    // Third Scroll Section Handler (scrolling-div-exec)
+    var section7 = $('#execScroll #section7');
+    var section8 = $('#execScroll #section8');
+    var section9 = $('#execScroll #section9');
+
+    if (section7.length && section8.length && section9.length) {
+      var section1OffsetExec = section7.offset().top;
+      var section2OffsetExec = section8.offset().top;
+      var section3OffsetExec = section9.offset().top;
+
+      if (scrollTop >= section1OffsetExec && scrollTop < section2OffsetExec) {
+        changeImageOnce('#execScroll #mainImageExec', 'asset/images/rating.png', 'scrollExec');
+      } else if (scrollTop >= section2OffsetExec && scrollTop < section3OffsetExec) {
+        changeImageOnce('#execScroll #mainImageExec', 'asset/images/iteration.png', 'scrollExec');
+      } else if (scrollTop >= section3OffsetExec) {
+        changeImageOnce('#execScroll #mainImageExec', 'asset/images/security.png', 'scrollExec');
+      }
+    }
+
+
+  });
+
+  // Function to change the image only once during scroll
+  function changeImageOnce(imageSelector, newSrc, sectionType) {
+    var image = $(imageSelector);
+if (sectionType === 'scrollExec' && lastImageScrollExec !== newSrc) {
+      image.fadeOut(300, function () {
+        image.attr('src', newSrc);
+        image.fadeIn(300);
+      });
+      lastImageScrollExec = newSrc;
+
+    } 
+  }
+});
+

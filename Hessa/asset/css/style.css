@@ -39,7 +39,7 @@ body.unit-view {
 
 nav {
     width: 100%;
-    z-index: 9;
+    z-index: 99;
     top: 0;
     background: #DCF6EB;
 }
@@ -102,6 +102,11 @@ nav form button {
     background-size: contain;
     text-align: center;
     padding: 90px 0 0;
+}
+
+.home-header .container {
+    z-index: 9;
+    position: relative;
 }
 
 .home-header h2 {
@@ -946,19 +951,15 @@ footer a {
     border: none;
 }
 
-
 .hero-section {
-    height: 100vh;
     position: relative;
-    margin-top: 50px;
-    /*background-color: #333;*/
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    display: block;
 }
 
 .parallax-img {
-    position: absolute;
-    max-width: 120%;
-    transition: transform 0.1s;
-    will-change: transform;
+    max-width: 100%;
 }
 
 .img1 {
@@ -968,35 +969,54 @@ footer a {
 }
 
 .img2 {
-    top: 50%;
+    top: 0%;
     left: 0%;
     z-index: 2;
 }
 
 .img3 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the image */
+    position: absolute;
+    top: -15vw;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 3;
-    max-width: 1000px!important;
-
+    width: 100%;
 }
 
+.img3 img {
+    width: 60vw;
+}
+
+.parallax-img {
+    transition: transform 0.1s ease;
+}
 
 .social-btn {
     display: flex;
-    align-items: center;      /* Vertical centering */
-    justify-content: center;  /* Horizontal centering */
-    width: 40px;              /* Set button width */
-    height: 40px;             /* Set button height */
-    background-color: #cfd3dc;; /* Green background color */
-    color: #000; /* Icon color */
-    font-size: 18px;          /* Icon size */
-    border-radius: 5px;       /* Square shape with slightly rounded corners */
+    align-items: center;
+    /* Vertical centering */
+    justify-content: center;
+    /* Horizontal centering */
+    width: 40px;
+    /* Set button width */
+    height: 40px;
+    /* Set button height */
+    background-color: #cfd3dc;
+    ;
+    /* Green background color */
+    color: #000;
+    /* Icon color */
+    font-size: 18px;
+    /* Icon size */
+    border-radius: 5px;
+    /* Square shape with slightly rounded corners */
     transition: background-color 0.3s ease;
     text-decoration: none;
 }
 
 .social-btn:hover {
-    background-color: #59acec; /* Darker green on hover */
+    background-color: #59acec;
+    /* Darker green on hover */
 }
