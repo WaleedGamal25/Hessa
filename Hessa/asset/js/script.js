@@ -1,27 +1,4 @@
 
-var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-var yValues = [55, 49, 44, 24, 15];
-var barColors = ["red", "green","blue","orange","brown"];
-
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    title: {
-      display: true,
-      text: "World Wine Production 2018"
-    }
-  }
-});
-
-
 
 
 
@@ -175,3 +152,102 @@ if (sectionType === 'scrollExec' && lastImageScrollExec !== newSrc) {
   }
 });
 
+
+	var owl = $(".academy .owl-carousel");
+	owl.owlCarousel({
+		autoplay: true,
+		autoplayTimeout: 1000,
+		autoplayHoverPause: true,
+		loop: true,
+		center: false,
+		rewind: false,
+		mouseDrag: true,
+		touchDrag: true,
+		pullDrag: true,
+		freeDrag: false,
+		margin: 20,
+		stagePadding: 0,
+		merge: false,
+		mergeFit: true,
+		autoWidth: false,
+		startPosition: 0,
+		rtl: false,
+		smartSpeed: 250,
+		fluidSpeed: false,
+		dragEndSpeed: false,
+		responsive: {
+			0: {
+				items: 1
+				// nav: true
+			},
+			480: {
+				items: 2,
+				nav: false
+			},
+			768: {
+				items: 3,
+				// nav: true,
+				loop: false
+			},
+			992: {
+				items: 4,
+				// nav: true,
+				loop: false
+			}
+		},
+
+	});
+
+	$(".next").click(function () {
+		owl.trigger("owl.next");
+	});
+	$(".prev").click(function () {
+		owl.trigger("owl.prev");
+	});
+
+
+  /* Video academy */
+
+  let currentVideoIndex = 0;
+  const videos = [
+      "asset/videos/video1.mp4",
+      "asset/videos/video2.mp4",
+      "asset/videos/video3.mp4",
+      "asset/videos/video4.mp4"
+      // Add more video sources here
+  ];
+  
+  function openModal(index) {
+      currentVideoIndex = index;
+      document.getElementById("videoModal").style.display = "block";
+      loadVideo();
+  }
+  
+  function closeModal() {
+      document.getElementById("videoModal").style.display = "none";
+      const video = document.getElementById("videoElement");
+      video.pause();
+  }
+  
+  function loadVideo() {
+      const video = document.getElementById("videoElement");
+      video.src = videos[currentVideoIndex];
+      video.load();
+      video.play();
+  }
+  
+  function selectVideo(index) {
+      currentVideoIndex = index;
+      loadVideo();
+  }
+  
+  function prevVideo() {
+      currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
+      loadVideo();
+  }
+  
+  function nextVideo() {
+      currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+      loadVideo();
+  }
+  

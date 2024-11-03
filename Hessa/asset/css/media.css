@@ -39,6 +39,22 @@
         background-size: cover;
         padding-top: 100px;
     }
+    #videoModal .modal-content {
+        align-items: center;
+        justify-content: center;
+    }
+    #videoModal .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+    #videoModal .modal-sidebar,
+    #videoModal .pagination {
+        display: none;
+    }
     .appartment.buy {
         padding: 0 10px;
     }

@@ -25,6 +25,12 @@ body.home {
     padding-top: 150px;
 }
 
+body.academy {
+    background: url(../images/bg2.png) no-repeat left top;
+    background-size: contain;
+    padding-top: 150px;
+}
+
 body.unit-view {
     padding-top: 120px;
 }
@@ -1019,4 +1025,108 @@ footer a {
 .social-btn:hover {
     background-color: #59acec;
     /* Darker green on hover */
+}
+
+.academy {
+    padding: 30px 0;
+    position: relative;
+}
+
+.academy .title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+}
+
+.academy a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.academy .data {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 0 10px 0 5px
+}
+
+.academy .media img {
+    width: 20px;
+}
+
+.academy .media p {
+    font-weight: 300;
+}
+
+#videoModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#videoModal .modal-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: #373C50;
+}
+
+#videoModal .modal-sidebar {
+    background-color: #222;
+    color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px 0;
+    height: 99vh;
+}
+
+#videoModal .thumbnail-list a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#videoModal .thumbnail-list a:hover {
+    background-color: #444;
+}
+
+#videoModal .modal-main {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#videoModal .video-player {
+    width: 100%;
+    max-height: 80vh;
+}
+
+#videoModal .pagination {
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#videoModal .pagination button {
+    width: fit-content;
+    margin: 5px auto;
+}
+
+#videoModal .close-btn {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
 }
