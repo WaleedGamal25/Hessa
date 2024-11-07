@@ -45,6 +45,9 @@
 }
 
 @media(max-width:767px) {
+    footer .col-md-5 ul {
+        text-align: center;
+    }
     body.home {
         background: url(../images/bg2.png) no-repeat center center;
         background-size: cover;

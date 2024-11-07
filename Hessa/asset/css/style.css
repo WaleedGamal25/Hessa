@@ -424,8 +424,30 @@ footer {
     margin-top: 30px;
 }
 
-footer ul {
+footer .row {
+    align-items: center;
+}
+
+footer i {
+    font-size: 30px;
+}
+
+footer .col-md-5 ul {
     text-align: right;
+}
+
+footer .social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+footer .social-icons a {
+    box-shadow: 0 0 7px 0 #BBB;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    border-radius: 50%;
 }
 
 footer li {
