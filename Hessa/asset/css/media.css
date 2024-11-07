@@ -9,6 +9,9 @@
 }
 
 @media(max-width:991px) {
+    .product-gallery .box h1 {
+        max-width: 100%;
+    }
     nav .form-inline {
         position: relative;
         width: 100%;
@@ -30,6 +33,14 @@
         font-size: 20px;
         max-width: 100%;
         text-align: center;
+    }
+}
+
+@media(min-width:1700px) {
+    .product-gallery .box h1 {
+        font-size: 22px;
+        margin-top: 0;
+        max-width: 450px;
     }
 }
 

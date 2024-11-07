@@ -573,6 +573,7 @@ footer a {
 .product-gallery .box h1 {
     font-size: 22px;
     margin-top: 0;
+    max-width: 350px;
 }
 
 .list-inline-item:not(:last-child) {
@@ -615,6 +616,20 @@ footer a {
     padding: 30px;
     border-radius: 30px;
     margin-bottom: 15px;
+}
+
+.appartment .product-label {
+    background: #58ACEC;
+    font-size: 14px;
+    width: fit-content;
+    padding: 3px 10px;
+    border-radius: 50px;
+    color: white;
+    margin: 10px;
+}
+
+.appartment .product-label i {
+    color: orange;
 }
 
 .documents .prize-box {
@@ -877,6 +892,17 @@ footer a {
     background: none;
     box-shadow: none;
     padding: 0;
+}
+
+.product-gallery {
+    position: relative;
+}
+
+.product-gallery .mark-icon {
+    position: absolute;
+    right: 26px;
+    top: 0;
+    z-index: 2;
 }
 
 .appartment.buy .product-gallery table {

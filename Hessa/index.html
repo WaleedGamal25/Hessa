@@ -97,21 +97,27 @@
             }
             
             #execScroll .section {
-                height: 49vh;
+                height: 29vw;
                 padding: 20px;
                 position: relative;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: flex-start;
                 flex-direction: column;
             }
             
+            #execScroll .section:first-of-type {
+                justify-content: flex-start;
+            }
+            
             #execScroll .section:last-of-type {
-                margin-bottom: 410px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                /* justify-content: center !important; */
             }
             
             #execScroll .image-container {
                 position: sticky;
-                top: 20px;
+                top: 100px;
                 height: auto;
             }
             
