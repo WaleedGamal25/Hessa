@@ -127,7 +127,7 @@ $(document).ready(function () {
       var section3OffsetExec = section9.offset().top;
 
       if (scrollTop >= section1OffsetExec && scrollTop < section2OffsetExec) {
-        changeImageOnce('#execScroll #mainImageExec', 'asset/images/rating.png', 'scrollExec');
+        changeImageOnce('#execScroll #mainImageExec', 'asset/images/hero-3.png', 'scrollExec');
       } else if (scrollTop >= section2OffsetExec && scrollTop < section3OffsetExec) {
         changeImageOnce('#execScroll #mainImageExec', 'asset/images/iteration.png', 'scrollExec');
       } else if (scrollTop >= section3OffsetExec) {
