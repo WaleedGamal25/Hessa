@@ -30,9 +30,13 @@
         .newsletter-page .position-relative {
             position: relative;
             width: 100%;
-            height: 300px;
+            /* height: 300px; */
             /* Adjust height as needed */
             overflow: hidden;
+        }
+        
+        .newsletter-page .login-form {
+            margin: 10px;
         }
         
         .newsletter-page .overlay-content {
@@ -60,8 +64,8 @@
             margin-right: 15px;
             /* Add spacing between the images */
             flex-shrink: 0;
-            height: 100%;
-            object-fit: cover;
+            width: 20%;
+            filter: blur(7px);
         }
         
         @keyframes moveLeftRight {
@@ -78,6 +82,43 @@
         
         .newsletter-page .bg-animate {
             animation: moveLeftRight 10s infinite;
+            display: flex;
+        }
+        /* Reverse */
+        
+        .newsletter-page .main-content .reverse-animation {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* overflow: hidden; */
+        }
+        
+        .newsletter-page .reverse-animation img {
+            margin-right: 15px;
+            /* Add spacing between the images */
+            flex-shrink: 0;
+            width: 20%;
+            filter: blur(0);
+        }
+        
+        @keyframes moveRightLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        .newsletter-page .reverse-animation {
+            animation: moveRightLeft 10s infinite;
+            display: flex;
         }
     </style>
 </head>
@@ -176,7 +217,7 @@
 
             </div>
 
-            <div class="position-relative" style="margin-top: -100px;margin-bottom:30px;z-index: -1;">
+            <div class="position-relative" style="margin-top: -300px;margin-bottom:30px;z-index: -1;">
                 <div class="container text-center overlay-content">
 
                 </div>
@@ -187,8 +228,42 @@
                     <img class="img-fluid" src="asset/images/aa.jpg" alt="">
                     <img class="img-fluid" src="asset/images/aa.jpg" alt="">
                     <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
                 </div>
+
+
             </div>
+
+
+            <div class="position-relative" style="margin-top: -100px;margin-bottom:30px;z-index: -1;">
+                <div class="container text-center overlay-content">
+
+                </div>
+
+
+                <div class="bg-animate reverse-animation">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                    <img class="img-fluid" src="asset/images/aa.jpg" alt="">
+                </div>
+
+
+            </div>
+
+
         </div>
     </div>
 
